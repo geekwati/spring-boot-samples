@@ -17,6 +17,9 @@ public class AllHttpMethodType {
     }
     
     @RequestMapping(value ="getmethod", method = RequestMethod.GET)
+    /*Get method is used to retrieve resource from server. It doesn't change state of resource in any way.
+     * that's why it is safe method. And it should be idempotent means get method should return same state of resource 
+     * when we make multiple request of that call untill another api (post or put) change the staate of resource*/
     public String getMethod() {
     	return "Http Get Method";
     }
@@ -27,7 +30,7 @@ public class AllHttpMethodType {
     }
     
     @RequestMapping(value= "putmethod", method = RequestMethod.PUT)
-    //public String putMethod(@RequestBody Long number) {
+    //put method is used for update
     public String putMethod() {
     	return "Put Http Method";
     }
