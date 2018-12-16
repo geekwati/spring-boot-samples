@@ -1,4 +1,4 @@
-package org.agile4tyro.nytcoder;
+package com.nytcoder.thymeleaf_sample;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
